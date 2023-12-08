@@ -1,0 +1,87 @@
+# all numbers inside the range of 0-15
+./histo
+16 bins of size 1 for range [0,16)
+[000:000] **
+[001:001] *
+[002:002] 
+[003:003] *******
+[004:004] 
+[005:005] **
+[006:006] 
+[007:007] *
+[008:008] *
+[009:009] 
+[010:010] 
+[011:011] 
+[012:012] *
+[013:013] 
+[014:014] 
+[015:015] *
+# inputting numbers outside the original range of 0-15
+./histo
+16 bins of size 1 for range [0,16)
+16 bins of size 2 for range [0,32)
+16 bins of size 4 for range [0,64)
+[000:003] *****
+[004:007] ****
+[008:011] *
+[012:015] ***
+[016:019] ***
+[020:023] *
+[024:027] 
+[028:031] *
+[032:035] **
+[036:039] 
+[040:043] 
+[044:047] *
+[048:051] *
+[052:055] 
+[056:059] 
+[060:063] 
+# inputting a number outside the original range of 0-15
+#that is big enough that the program has to double the bin size multiple times
+./histo
+16 bins of size 1 for range [0,16)
+16 bins of size 2 for range [0,32)
+16 bins of size 4 for range [0,64)
+16 bins of size 8 for range [0,128)
+16 bins of size 16 for range [0,256)
+[000:015] 
+[016:031] 
+[032:047] 
+[048:063] 
+[064:079] 
+[080:095] 
+[096:111] 
+[112:127] 
+[128:143] 
+[144:159] *
+[160:175] 
+[176:191] 
+[192:207] 
+[208:223] 
+[224:239] 
+[240:255] 
+# an example using bash syntax to generate a list of numbers, and piping the output to histo
+echo {1..16} 150 | ./histo
+16 bins of size 1 for range [0,16)
+16 bins of size 2 for range [0,32)
+16 bins of size 4 for range [0,64)
+16 bins of size 8 for range [0,128)
+16 bins of size 16 for range [0,256)
+[000:015] ***************
+[016:031] *
+[032:047] 
+[048:063] 
+[064:079] 
+[080:095] 
+[096:111] 
+[112:127] 
+[128:143] 
+[144:159] *
+[160:175] 
+[176:191] 
+[192:207] 
+[208:223] 
+[224:239] 
+[240:255] 

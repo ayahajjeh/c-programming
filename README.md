@@ -1,7 +1,5 @@
-# CS 50 Lab 2
-## Aya Hajjeh
+# C Programming
 
-GitHub username: ayahajjeh
+`This was my Lab 2 for CS50 Software Design and Implementation class at Dartmouth College.`
 
-
-*Please replace this text with any comments you have about the overall assignment.  Your solutions should be in other files as defined by the assignment.*
+Please refer to https://www.cs.dartmouth.edu/~tjp/cs50/labs/lab2/ for a description of the lab and its requirements.
